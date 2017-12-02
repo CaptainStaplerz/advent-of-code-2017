@@ -1,0 +1,1 @@
+const checksum = (arr, row) => arr.reduce((sum, digits) => (row = digits.sort((a, b) => a-b)) ? row.pop() - row[0] + sum : sum, 0);
